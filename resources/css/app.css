@@ -38,6 +38,18 @@ html.is-animating .transition-fade {
     opacity: 0;
 }
 
+.gradiant-thumbtack-base {
+    background: radial-gradient(circle, rgba(182,42,42,1) 0%, rgba(255,0,52,1) 100%);
+}
+.gradiant-thumbtack-middle {
+    background: radial-gradient(circle, rgba(182,42,42,1) 0%, rgba(163,18,37,1) 51%, rgba(255,0,52,1) 100%);
+}
+.gradiant-thumbtack-top {
+    background: radial-gradient(circle, rgba(198,29,29,1) 31%, rgba(171,19,39,1) 50%, rgba(255,0,52,1) 100%);
+}
+.gradiant-thumbtack-dot {
+    background: linear-gradient(90deg, rgba(187,187,187,1) 0%, rgba(255,255,255,1) 50%, rgba(187,187,187,1) 100%);
+}
 /* .loader {
     position: fixed;
     width: 100vw;
