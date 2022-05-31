@@ -50,6 +50,11 @@ html.is-animating .transition-fade {
 .gradiant-thumbtack-dot {
     background: linear-gradient(90deg, rgba(187,187,187,1) 0%, rgba(255,255,255,1) 50%, rgba(187,187,187,1) 100%);
 }
+
+.task:nth-child(even){
+    @apply bg-white-soft;
+    filter: contrast(90%);
+}
 /* .loader {
     position: fixed;
     width: 100vw;

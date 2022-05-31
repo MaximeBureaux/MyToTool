@@ -975,6 +975,9 @@ select {
 .relative {
   position: relative;
 }
+.\!relative {
+  position: relative !important;
+}
 .inset-0 {
   top: 0px;
   right: 0px;
@@ -1023,6 +1026,21 @@ select {
 .top-\[65\%\] {
   top: 65%;
 }
+.-right-1 {
+  right: -0.25rem;
+}
+.top-2 {
+  top: 0.5rem;
+}
+.right-2 {
+  right: 0.5rem;
+}
+.top-3 {
+  top: 0.75rem;
+}
+.right-3 {
+  right: 0.75rem;
+}
 .-right-10 {
   right: -2.5rem;
 }
@@ -1049,21 +1067,6 @@ select {
 }
 .-left-3 {
   left: -0.75rem;
-}
-.-right-1 {
-  right: -0.25rem;
-}
-.top-2 {
-  top: 0.5rem;
-}
-.right-2 {
-  right: 0.5rem;
-}
-.top-3 {
-  top: 0.75rem;
-}
-.right-3 {
-  right: 0.75rem;
 }
 .-bottom-0 {
   bottom: -0px;
@@ -1258,6 +1261,9 @@ select {
 .h-\[4px\] {
   height: 4px;
 }
+.h-full {
+  height: 100%;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1335,11 +1341,11 @@ select {
 .w-14 {
   width: 3.5rem;
 }
-.w-32 {
-  width: 8rem;
-}
 .w-\[2px\] {
   width: 2px;
+}
+.w-32 {
+  width: 8rem;
 }
 .w-11\/12 {
   width: 91.666667%;
@@ -1414,16 +1420,8 @@ select {
   --tw-rotate: 6deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.rotate-\[30deg\] {
-  --tw-rotate: 30deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
 .rotate-180 {
   --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.-rotate-\[30deg\] {
-  --tw-rotate: -30deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-rotate-45 {
@@ -1434,6 +1432,14 @@ select {
   --tw-rotate: -35deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.rotate-\[30deg\] {
+  --tw-rotate: 30deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-rotate-\[30deg\] {
+  --tw-rotate: -30deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .scale-95 {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
@@ -1442,6 +1448,11 @@ select {
 .scale-100 {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scale-90 {
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform {
@@ -1543,6 +1554,12 @@ select {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-visible {
+  overflow: visible;
+}
+.\!overflow-visible {
+  overflow: visible !important;
 }
 .overflow-y-auto {
   overflow-y: auto;
@@ -2000,11 +2017,11 @@ select {
 .opacity-40 {
   opacity: 0.4;
 }
-.opacity-\[0\.9\] {
-  opacity: 0.9;
-}
 .opacity-70 {
   opacity: 0.7;
+}
+.opacity-\[0\.9\] {
+  opacity: 0.9;
 }
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -2147,6 +2164,11 @@ html.is-animating .transition-fade {
 }
 .gradiant-thumbtack-dot {
     background: linear-gradient(90deg, rgba(187,187,187,1) 0%, rgba(255,255,255,1) 50%, rgba(187,187,187,1) 100%);
+}
+.task:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 246 248 / var(--tw-bg-opacity));
+    filter: contrast(90%);
 }
 /* .loader {
     position: fixed;

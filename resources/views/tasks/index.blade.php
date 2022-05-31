@@ -65,7 +65,7 @@
                     </thead>
                     <tbody>
                       @foreach($tasks as $task)
-                        <tr class="flex justify-space-evenly">
+                        <tr class="flex justify-space-evenly task">
                           <td class="px-1 lg:px-4 py-3 w-1/5 text-center truncate">{{ $task->title }}</td>
                           <td class="px-4 py-3 w-1/5 text-center max-w-md truncate hidden lg:block">{{ $task->detail }}</td>
                           <td class="px-1 lg:px-4 py-3 w-[40px] lg:w-1/5 flex justify-center">@if($task->state) <img src="{{URL::asset('/img/tick.svg')}}">  @else <img class="animate-spin select-none" src="{{URL::asset('/img/loading.svg')}}"> @endif</td>
@@ -80,7 +80,22 @@
                                 this.closest('form').submit();">
                               </a>
                             </form>
-                          </td class="px-4 py-3">
+                          </td>
+                          <td class="relative">
+                            <div class="absolute scale-90 rotate-180">
+                              <div class="relative w-fit">
+                                  <div class="gradiant-thumbtack-dot w-4 h-[3px] -rotate-45 absolute -right-1 top-2"></div>
+                                    <div class="gradiant-thumbtack-base w-10 h-10 rounded-full relative">
+                                      <div class="bg-white w-[2px] h-[7px] rounded-lg absolute top-2 right-2 -rotate-[35deg] opacity-70 z-10"></div>
+                                      <div class="gradiant-thumbtack-middle w-6 h-6 rounded-full absolute top-3 right-3">
+                                          <div class="gradiant-thumbtack-top w-7 h-7 rounded-full absolute top-2 right-2">
+                                              <div class="bg-white w-[2px] h-[4px] rounded-lg absolute top-2 right-2 -rotate-[35deg] opacity-70"></div>
+                                          </div>
+                                      </div>
+                                    </div>
+                              </div>
+                            </div>
+                          </td>
                         </tr>
                       @endforeach
                     </tbody>

@@ -12,7 +12,6 @@
                     {{ session('status') }}
                 </div>
             @endif
-
             <form method="POST" action="{{ route('login') }}">
                 @csrf
 
@@ -51,6 +50,18 @@
                     </a>
                 </div>
             </form>
+            <div class="absolute -right-10 -top-5">
+                <div class="relative bg-[#fffdd9] opacity-[0.9] w-32 h-12 rotate-[30deg]">
+                    <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -right-9 rotate-180"></div>
+                    <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -left-9 "></div>
+                </div>
+            </div>
+            <div class="absolute -left-10 -bottom-10">
+                <div class="relative bg-[#fffdd9] opacity-[0.9] w-32 h-12 rotate-[30deg]">
+                    <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -right-9 rotate-180"></div>
+                    <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -left-9 "></div>
+                </div>
+            </div>
         </x-jet-authentication-card>
     </div>
 </x-guest-layout>
