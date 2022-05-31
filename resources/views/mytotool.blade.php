@@ -13,6 +13,21 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    keyframes: {
+                            wave: {
+                            '0%': { transform: 'rotate(0.0deg)' },
+                            '10%': { transform: 'rotate(14deg)' },
+                            '20%': { transform: 'rotate(-8deg)' },
+                            '30%': { transform: 'rotate(14deg)' },
+                            '40%': { transform: 'rotate(-4deg)' },
+                            '50%': { transform: 'rotate(10.0deg)' },
+                            '60%': { transform: 'rotate(0.0deg)' },
+                            '100%': { transform: 'rotate(0.0deg)' },
+                            },
+                        },
+                        animation: {
+                            'waving-hand': 'wave 2s linear infinite',
+                        },
                         fontFamily: {
                             'jost': ["'Jost'", "sans-serif;"],
                         },
@@ -43,8 +58,8 @@
 <body id="swup" class="transition-fade overflow-hidden">
     <a href="{{ route('login') }}">
         <div class="w-full h-screen bg-white-soft flex justify-center items-center cursor-rond">
-            <div class="text-md lg:text-7xl back flex items-center select-none peer " onclick="modalHandler(true)">
-                <img src="{{ asset('/img/noun-pen-4549112.svg') }}" alt="" class="w-14 h-14 lg:w-40 lg:h-40">
+            <div class="text-md lg:text-7xl back flex items-center select-none peer group" onclick="modalHandler(true)">
+                <img src="{{ asset('/img/noun-pen-4549112.svg') }}" alt="" class="w-14 h-14 lg:w-40 lg:h-40 group-hover:animate-waving-hand">
                 <span class="font-jost h-fit">M</span>
                 <span class="font-jost h-fit">y</span>
                 <span class="font-jost h-fit">T</span>

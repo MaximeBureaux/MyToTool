@@ -88,7 +88,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach($tasks as $task)
+                      @foreach($tasks->sortBy('state') as $task)
                         <tr class="flex justify-space-evenly task">
                           <td class="px-1 lg:px-4 py-3 w-1/5 text-center truncate">{{ $task->title }}</td>
                           <td class="px-4 py-3 w-1/5 text-center max-w-md truncate hidden lg:block">{{ $task->detail }}</td>

@@ -56,5 +56,30 @@
                 </x-jet-button>
             </div>
         </form>
+        <div class="absolute right-[36%] top-[33%] scale-90 rotate-180 xl:block hidden">
+            <div class="relative w-fit">
+                <div class="gradiant-thumbtack-dot w-4 h-[3px] -rotate-45 absolute -right-1 top-2"></div>
+                  <div class="gradiant-thumbtack-base w-10 h-10 rounded-full relative">
+                    <div class="bg-white w-[2px] h-[7px] rounded-lg absolute top-2 right-2 -rotate-[35deg] opacity-70 z-10"></div>
+                    <div class="gradiant-thumbtack-middle w-6 h-6 rounded-full absolute top-3 right-3">
+                        <div class="gradiant-thumbtack-top w-7 h-7 rounded-full absolute top-2 right-2">
+                            <div class="bg-white w-[2px] h-[4px] rounded-lg absolute top-2 right-2 -rotate-[35deg] opacity-70"></div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="absolute left-1/3 top-[32%] hidden xl:block">
+            <div class="relative bg-[#fffdd9] opacity-[0.9] w-32 h-12 -rotate-[30deg]">
+                <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -right-9 rotate-180"></div>
+                <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -left-9 "></div>
+            </div>
+        </div>
+        <div class="absolute left-[35%] bottom-1/4 hidden xl:block">
+            <div class="relative bg-[#fffdd9] opacity-[0.9] w-32 h-12 rotate-[30deg]">
+                <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -right-9 rotate-180"></div>
+                <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -left-9 "></div>
+            </div>
+        </div>
     </x-jet-authentication-card>
 </x-guest-layout>
