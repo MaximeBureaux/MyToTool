@@ -7,6 +7,10 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="{{ asset('/img/noun-pen-4549112.svg') }}" id="dark-icon" />
+        <link rel="icon" type="image/svg+xml" href="{{ asset('/img/noun-pen-4549112-light.svg') }}" id="light-icon" />
+
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
@@ -22,4 +26,22 @@
             {{ $slot }}
         </div>
     </body>
+    <script>
+        matcher = window.matchMedia('(prefers-color-scheme: dark)');
+        matcher.addListener(onUpdate);
+        onUpdate();
+        
+        function onUpdate() {
+            lightSchemeIcon = document.querySelector('link#light-icon');
+            darkSchemeIcon = document.querySelector('link#dark-icon');
+
+            if (matcher.matches) {
+                lightSchemeIcon.remove();
+                document.head.append(darkSchemeIcon);
+            } else {
+                document.head.append(lightSchemeIcon);
+                darkSchemeIcon.remove();
+            }
+        }
+    </script>
 </html>

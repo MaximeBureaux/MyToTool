@@ -1,5 +1,5 @@
-<x-guest-layout data-barba="wrapper">
-    <div data-barba="container" data-barba-namespace="home">
+<x-guest-layout>
+    <div>
         <x-jet-authentication-card>
             <x-slot name="logo">
                 <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_shqk4llg.json"  background="transparent"  speed="1.5"  style="width: 300px; height: 150px;"    autoplay></lottie-player>
@@ -50,13 +50,13 @@
                     </a>
                 </div>
             </form>
-            <div class="absolute -right-10 -top-5">
+            <div class="absolute right-1/3 top-[40%] hidden xl:block">
                 <div class="relative bg-[#fffdd9] opacity-[0.9] w-32 h-12 rotate-[30deg]">
                     <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -right-9 rotate-180"></div>
                     <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -left-9 "></div>
                 </div>
             </div>
-            <div class="absolute -left-10 -bottom-10">
+            <div class="absolute left-[35%] bottom-1/4 hidden xl:block">
                 <div class="relative bg-[#fffdd9] opacity-[0.9] w-32 h-12 rotate-[30deg]">
                     <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -right-9 rotate-180"></div>
                     <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -left-9 "></div>

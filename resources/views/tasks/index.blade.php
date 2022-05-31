@@ -7,7 +7,31 @@
     </x-slot>
     <div class="loader"></div>
     <div class="w-full min-h-screen overflow-hidden flex justify-center items-center relative shadow-xl">
-      <div class="lg:w-[70%] w-[95%] bg-white-soft min-h-[90vh]">
+      <div class="lg:w-[70%] w-[95%] bg-white-soft min-h-[90vh] relative">
+        <div class="absolute xl:-right-14 right-20 xl:top-5 -top-5">
+          <div class="relative bg-[#fffdd9] opacity-[0.9] w-32 h-12 xl:rotate-[50deg]">
+              <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -right-9 rotate-180"></div>
+              <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -left-9 "></div>
+          </div>
+        </div>
+        <div class="absolute -left-10 -top-2 hidden xl:block">
+          <div class="relative bg-[#fffdd9] opacity-[0.9] w-32 h-12 -rotate-[20deg]">
+              <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -right-9 -rotate-180"></div>
+              <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -left-9 "></div>
+          </div>
+        </div>
+        <div class="absolute -left-10 -bottom-7 hidden xl:block">
+          <div class="relative bg-[#fffdd9] opacity-[0.9] w-32 h-12 rotate-[30deg]">
+              <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -right-9 rotate-180"></div>
+              <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -left-9 "></div>
+          </div>
+        </div>
+        <div class="absolute xl:-right-10 left-16 xl:left-auto -bottom-5 ">
+          <div class="relative bg-[#fffdd9] opacity-[0.9] w-32 h-12 xl:-rotate-[25deg]">
+              <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -right-9 rotate-180"></div>
+              <div class="scotch absolute bg-[#fffdd9] w-10 h-12 -left-9 "></div>
+          </div>
+        </div>
         @if (session()->has('message'))
           <div class="flex items-center bg-green-500 text-white text-sm font-bold px-4 py-3 ">
             {{ session('message') }}
@@ -26,7 +50,7 @@
               <div class="bg-white shadow-innerxl w-7 h-7 rounded-full"></div>
               <div class="bg-white shadow-innerxl w-7 h-7 rounded-full"></div>
           </div>
-          <div class="absolute top-[15%] left-[13%] hidden lg:block">
+          <div class="absolute top-[15%] -left-7 hidden lg:block">
               <div class="relative">
                   <div class="gradiant-pince w-20 h-40 shadow"></div>
                   <div class="gradiant-pince2 w-5 h-10 absolute z-10 top-0 right-0"></div>
@@ -39,7 +63,7 @@
                   <div class="absolute w-16 h-20 top-[50%] -translate-y-[50%] -left-[175%] bg-white rounded-full shadow-innerxl2"></div>
               </div>
           </div>
-          <div class="absolute top-[65%] left-[13%] hidden lg:block">
+          <div class="absolute top-[65%] -left-7 hidden lg:block">
               <div class="relative">
                   <div class="gradiant-pince w-20 h-40 shadow"></div>
                   <div class="gradiant-pince2 w-5 h-10 absolute z-10 top-0 right-0"></div>
