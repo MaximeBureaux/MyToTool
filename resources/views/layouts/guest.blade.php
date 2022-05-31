@@ -27,6 +27,12 @@
         </div>
     </body>
     <script>
+        window.setTimeout("closeHelpDiv();", 5000);
+
+        function closeHelpDiv() {
+        document.getElementById("helpdiv").style.display=" none";
+        }
+
         matcher = window.matchMedia('(prefers-color-scheme: dark)');
         matcher.addListener(onUpdate);
         onUpdate();

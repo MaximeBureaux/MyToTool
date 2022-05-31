@@ -33,7 +33,7 @@
           </div>
         </div>
         @if (session()->has('message'))
-          <div class="flex items-center bg-green-500 text-white text-sm font-bold px-4 py-3 ">
+          <div class="items-center justify-center bg-green-500 text-white text-sm font-bold px-4 py-3" id="helpdiv" style="display: flex">
             {{ session('message') }}
           </div>
         @endif

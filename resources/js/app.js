@@ -6,6 +6,7 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
+
 // function init(){
     
 //     const loader = document.querySelector('.loader');
